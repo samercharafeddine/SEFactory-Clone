@@ -1,0 +1,83 @@
+.hero-section {
+  height: 100vh;
+  min-height: 100%;
+  display: flex;
+  position: relative;
+}
+
+.left-hero,
+.right-hero {
+  display: flex;
+  width: 50%;
+  background-size: cover;
+  background-clip: border-box;
+  align-items: center;
+  align-self: auto;
+  position: relative;
+}
+
+.left-hero {
+  justify-content: flex-end;
+  background-image: url(../assets/leftHero.png);
+}
+
+.right-hero {
+  justify-content: flex-start;
+  background-image: linear-gradient(
+      rgba(35, 35, 35, 0.85),
+      rgba(35, 35, 35, 0.85)
+    ),
+    url(../assets/rightHero.png);
+}
+
+.left-hero-content,
+.right-hero-content {
+  width: 100%;
+  height: 40vh;
+  max-height: 100vh;
+  max-width: 670px;
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+}
+
+.left-hero-content {
+  align-items: flex-end;
+  padding-right: 50px;
+}
+
+.right-hero-content {
+  align-items: flex-start;
+  padding-left: 50px;
+}
+
+.hero-title {
+  text-transform: uppercase;
+  flex: 0 auto;
+  font-size: 36px;
+  font-weight: 900;
+}
+
+.left {
+  text-align: right;
+}
+
+.right {
+  text-align: left;
+}
+
+.hero-description {
+  margin: 40px 0px;
+  line-height: 1.5;
+  color: white;
+}
+
+.left-hero-btn {
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 800;
+  white-space: nowrap;
+  background-color: grey;
+  display: inline-block;
+}
