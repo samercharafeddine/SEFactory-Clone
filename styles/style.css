@@ -238,7 +238,58 @@ iframe {
   border-radius: 10px 10px 0 0;
   padding: 20px 50px;
   font-weight: 900;
+  color: rgb(255, 198, 53);
 }
+
+.tabs-panels-content {
+  min-height: 100%;
+  display: block;
+  position: relative;
+}
+
+.program-tab-content {
+  background-color: #363738;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  border-radius: 0px 20px 20px 20px;
+  column-gap: 40px;
+  padding: 20px;
+}
+
+.tabs-content-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-self: stretch;
+  flex: 1;
+  row-gap: 24px;
+}
+.testimonial-img {
+  width: 400px;
+  height: 400px;
+  border-radius: 10px;
+  object-fit: cover;
+  max-width: 100%;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.fcs-color {
+  color: #ffc635;
+}
+.fsw-color {
+  color: #28eea7;
+}
+.fsd-color {
+  color: #9864da;
+}
+.uix-color {
+  color: #fb508e;
+}
+
+/* Hite talent Section */
 
 /* Section titles section */
 .section-title {
@@ -291,3 +342,5 @@ iframe {
 .green-circle {
   background-color: #28eea7;
 }
+
+/* JS used classes */
