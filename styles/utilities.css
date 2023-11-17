@@ -19,8 +19,11 @@ img {
   height: 100%;
 }
 
-.btn {
+button {
   line-height: inherit;
+  border: none;
+  text-align: center;
+  align-items: center;
   cursor: pointer;
   display: inline-block;
   width: 150px;
