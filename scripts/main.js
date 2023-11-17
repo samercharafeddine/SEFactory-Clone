@@ -3,26 +3,27 @@
 const hero_text = document.querySelector(".typed-text");
 
 const words = ["SOFTWARE ENGINEER?", "DATA ENGINEER?", "UI/UX DESIGNER?"];
+
 let wordIndex = 0;
-let i = 0;
-let typing = true;
+let wordItirator = 0;
+let isTyping = true;
 
 const time = setInterval(() => {
   const currentWord = words[wordIndex];
-  hero_text.innerHTML = currentWord.slice(0, i);
+  hero_text.innerHTML = currentWord.slice(0, wordItirator);
 
-  if (i === currentWord.length && typing) {
-    typing = false;
-    i--;
-  } else if (i === 0 && !typing) {
-    typing = true;
+  if (wordItirator === currentWord.length && isTyping) {
+    isTyping = false;
+    wordItirator--;
+  } else if (wordItirator === 0 && !isTyping) {
+    isTyping = true;
     wordIndex = (wordIndex + 1) % words.length;
   }
 
-  if (typing) {
-    i++;
+  if (isTyping) {
+    wordItirator++;
   } else {
-    i--;
+    wordItirator--;
   }
 }, 100);
 
